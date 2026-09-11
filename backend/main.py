@@ -2,7 +2,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routeurs.index import api_router
 
-app = FastAPI(title="auditWeb API")
+app = FastAPI(
+    title="auditWeb API",
+    description="Audit automatisé RGAA, RGPD et RGESN",
+    version="1.0.0",)
 
 app.add_middleware(
     CORSMiddleware,

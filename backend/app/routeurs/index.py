@@ -1,5 +1,5 @@
-from app.routeurs.audit_router import router as audit_router
 from fastapi import APIRouter
+from app.routeurs.audit_router import router as audit_router
 
 # Routeur principal de l'API
 api_router = APIRouter(prefix="/api")
