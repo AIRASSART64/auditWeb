@@ -1,11 +1,18 @@
+import sys
+import asyncio
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routeurs.index import api_router
 
+# Configuration obligatoire pour Playwright sous Windows
+if sys.platform == "win32":
+    asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
+
 app = FastAPI(
     title="auditWeb API",
     description="Audit automatisé RGAA, RGPD et RGESN",
-    version="1.0.0",)
+    version="1.0.0",
+)
 
 app.add_middleware(
     CORSMiddleware,

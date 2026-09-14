@@ -81,7 +81,7 @@ function App() {
     <div style={{ padding: '30px', fontFamily: "'Segoe UI', Roboto, Helvetica, Arial, sans-serif", backgroundColor: '#f8f9fa', minHeight: '100vh', color: '#333' }}>
       <header style={{ textAlign: 'center', marginBottom: '40px' }}>
         <h1 style={{ fontSize: '2.2rem', color: '#1a237e', marginBottom: '10px' }}>
-          Tableau de Bord d'Audit Web
+          Rapport d'audit de site web
         </h1>
         <p style={{ color: '#666', fontSize: '1.1rem' }}>
           Conformité & Performance : Accessibilité (RGAA), Éco-conception (RGESN) et Vie Privée (RGPD)
@@ -120,7 +120,7 @@ function App() {
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           {/* Barres d'actions (Téléchargements) */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-            <h2 style={{ fontSize: '1.5rem', color: '#1a237e', margin: 0 }}>
+            <h2 style={{ fontSize: '1rem', color: '#1a237e', margin: 0 }}>
               Rapport pour : <a href={resultats.url} target="_blank" rel="noreferrer" style={{ color: '#1565c0', textDecoration: 'none' }}>{resultats.url}</a>
             </h2>
             <div style={{ display: 'flex', gap: '10px' }}>

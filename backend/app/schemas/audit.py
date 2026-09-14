@@ -2,6 +2,8 @@ from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, Field, HttpUrl
 
 
+class AuditRequest(BaseModel):
+    url: HttpUrl
 # ==========================================
 # 1. SCHÉMAS RGAA (Accessibilité)
 # ==========================================
